@@ -1,6 +1,9 @@
-var app = new Vue({
-    el: "#app",
-    data: {
-        dark_mode: false,
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += "dark-theme"
     }
-});
+    else {
+        document.body.classList.remove('dark-theme')
+    }
+}

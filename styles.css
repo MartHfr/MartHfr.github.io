@@ -10,6 +10,8 @@
 :root {
     --text-color: #0077b6;
     --text-color-alt: #FFA500;
+    --shadow-color: #242424;
+    --backg-color: 
 }
 
 body {
@@ -98,6 +100,40 @@ section:nth-child(even) {
     background-color: #f8f8f8;
 }
 
+/*skdjflafjvblaifdbvlaf*/
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-adjust,
+.dark-theme .header__para {
+    color: white;
+}
+
+.dark-theme section {
+    background-color: #242424;
+}
+
+.dark-theme #personal-logo,
+.footer__logo--img {
+    filter: invert(1);
+}
+
+.dark-theme .scroll__icon {
+    border-color: white;
+}
+
+
+.dark-theme .scroll__icon:after,
+.dark-theme .link__hover-effect--black:after {
+    background-color: white;
+}
+
+.dark-theme .mail__btn {
+    background-color: white;
+    color: #242424;
+}
+
 /* NAV BAR */
 
 nav {
@@ -168,7 +204,7 @@ nav {
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 18px 16px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 0px 10px var(--shadow-color);
     margin-bottom: 28px;
     animation: animate-profile-picture 800ms 200ms backwards;
 }
@@ -275,6 +311,9 @@ nav {
     align-items: center;
     padding: 25px 16px;
 }
+.js-round{
+    border-radius: 10px;
+}
 
 .language__list {
     display: flex;
@@ -310,8 +349,8 @@ nav {
 
 .project__wrapper {
     display: flex;
-    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
-    border-radius: 20px;
+    box-shadow: 10px 10px var(--shadow-color);
+    border-radius:10px;
     overflow: hidden;
     position: relative;
 }
@@ -389,7 +428,7 @@ nav {
 /* Footer */
 
 footer {
-    background-color: #242424;
+    background-color: var(--shadow-color);
 }
 
 .footer__logo {
