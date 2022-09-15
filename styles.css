@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-color: #0077b6;
+}
+
 body {
     background-color: white;
 }
@@ -86,7 +90,7 @@ li {
 }
 
 .text--purple {
-    color: #0077b6;
+    color: var(--text-color);
 }
 
 section:nth-child(even) {
@@ -117,7 +121,7 @@ nav {
 }
 
 .nav__link--anchor-primary {
-    background-color: #0077b6;
+    background-color: var(--text-color);
     padding: 8px 20px;
     border-radius: 50px;
     color: white;
@@ -125,12 +129,12 @@ nav {
 }
 
 .nav__link--anchor-primary:hover {
-    background-color: #5d3eff;
+    background-color: var(--text-color);
 }
 
 .personal__logo {
     font-size: 24px;
-    color: #0077b6;
+    color: var(--text-color);
     margin: 0 12px;
     font-weight: bold;
 }
