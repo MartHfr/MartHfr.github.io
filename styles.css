@@ -100,7 +100,7 @@ section:nth-child(even) {
     background-color: #f8f8f8;
 }
 
-/*skdjflafjvblaifdbvlaf*/
+/*dark theme*/
 .dark-theme .title,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
@@ -109,26 +109,20 @@ section:nth-child(even) {
 .dark-theme .header__para {
     color: white;
 }
-
 .dark-theme section {
     background-color: #242424;
 }
-
 .dark-theme #personal-logo,
 .footer__logo--img {
     filter: invert(1);
 }
-
 .dark-theme .scroll__icon {
     border-color: white;
 }
-
-
 .dark-theme .scroll__icon:after,
 .dark-theme .link__hover-effect--black:after {
     background-color: white;
 }
-
 .dark-theme .mail__btn {
     background-color: white;
     color: #242424;
@@ -244,7 +238,7 @@ nav {
 
 .about-me__link {
     font-size: 20px;
-    color: #242424;
+    color: var(--shadow-color);
     padding: 0 16px 0%;
     animation: fade-up 650ms 400ms backwards;
 }
